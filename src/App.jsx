@@ -11,6 +11,8 @@ const App = () => {
     <Router>
       <div className='App'>
         <Routes>
+          {/* Inicial */}
+          <Route path='/' element={<Code />} />
           {/* Developer paths */}
           <Route path='/code' element={<Code />} />
           <Route path='/code/servicios' element={<Services />} />
