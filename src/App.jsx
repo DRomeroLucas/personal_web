@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Code from './pages/Code.jsx';
 import Environmental from './pages/Environmental.jsx';
 import Contact from './pages/Contact.jsx';
@@ -12,10 +12,10 @@ const App = () => {
       <div className='App'>
         <Routes>
           {/* Inicial */}
-          <Route path='/' element={<Code />} />
+          <Route path='/' element={<Navigate to='/code'/>}/>
           {/* Developer paths */}
           <Route path='/code' element={<Code />} />
-          <Route path='/code/servicios' element={<Services />} />
+          <Route path='/code/servicios' element={<Services />}/>
           <Route path='/code/contacto' element={<Contact />}/>
 
           {/* Enviromental paths */}
