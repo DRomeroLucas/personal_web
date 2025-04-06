@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
+import presentationImage from '../assets/logo_dsrl.webp'
 
 const Code = () => {
   return (
@@ -8,7 +9,7 @@ const Code = () => {
       
     <main className='d-flex align-items-center'>
       <h1 className='hello py-5 text-center'>Hola mundo! <br /> Soy David Romero, programador!</h1>
-      <img className="photo w-5 rounded-circle" src="../../src/assets/logo_dsrl.png" alt="Logo temporal"/>
+      <img className="photo w-5 rounded-circle" src={presentationImage} alt="Logo temporal"/>
     </main>
 
     <div className=' container-description center-block'>
