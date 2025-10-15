@@ -174,7 +174,7 @@ footer {
     display: inline-block;
 }
 
-.text-navbar:hover, .fuente_code:hover {
+.text-navbar:hover {
     transform: scale(1.1);
     color: var(--navbar-text-hover);
 }

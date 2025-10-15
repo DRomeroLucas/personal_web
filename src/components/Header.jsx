@@ -44,7 +44,7 @@ const Header = () => {
         if(location.pathname.startsWith('/code')) {
           return {service:'/code/servicios', contact:'/code/contacto', alterPage: '/ambiental', nameAltPage: 'Ambiental'};
         } else if(location.pathname.startsWith('/ambiental')) {
-          return {service:'/ambiental/servicios', contact:'/ambiental/contacto', alterPage: '/code', nameAltPage: <p class="fuente_code">@Desarrollador</p>};
+          return {service:'/ambiental/servicios', contact:'/ambiental/contacto', alterPage: '/code', nameAltPage: <p class="text-navbar fuente_code">@Desarrollador</p>};
         }
       };
 
