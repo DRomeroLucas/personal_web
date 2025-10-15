@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center" id="start">Personal website 🌐 with React ⚛️</h1>
-<img alt="version badge" src="https://img.shields.io/badge/Version-1.4.3-blue">
+<img alt="version badge" src="https://img.shields.io/badge/Version-1.5.3-blue">
 <br/>
 <p>This project is about my presentation website using React, the goal of this is trying to present your profile in the most summarize way, like a card, simple yet powerful enough to capture the attention of recruiters, potential coworkers, engineers, and other professionals.</p>
 

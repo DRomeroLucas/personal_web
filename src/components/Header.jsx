@@ -2,10 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import HamburguerMenu from './HamburguerMenu';
-
-
+import { useTheme } from '../context/ThemeContext';
+import moon from '../assets/moon.svg';
+import sun from '../assets/sun.svg';
 
 const Header = () => {
+
+  const { darkMode, toggleDarkMode } = useTheme();
 
   const location = useLocation(); // Current location
 
@@ -84,6 +87,7 @@ const Header = () => {
                 {portfolio()}
                 <Link to={contact} className='text-navbar m-2 text-decoration-none'>Contacto</Link>
                 <Link to={alterPage} className='text-navbar m-2 text-decoration-none'>{nameAltPage}</Link>
+                { darkMode ? <img class="dark-light-icon" src={sun} onClick={toggleDarkMode} aria-label="Tema brillante" /> : <img class="dark-light-icon" src={moon} onClick={toggleDarkMode} aria-label="Tema oscura"/> }
               </div>
               <div className='hamburguer-menu' onClick={toggleHamburguer}>
                 <HamburguerMenu isOpen={hamburguerOpen}/>
