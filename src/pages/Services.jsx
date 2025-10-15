@@ -36,10 +36,11 @@ const Services = () => {
             )
             break;
     };
+
   return (
     <Layout className="code-layout">
         <main className='container-services'>
-            <h1 className='title text-center'>Servicios</h1>
+            <h1 className='title text-center services-title'>Servicios</h1>
             <ul className='service-list mx-5 text-center'>
                 {content}
             </ul>

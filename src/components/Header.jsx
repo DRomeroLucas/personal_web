@@ -41,7 +41,7 @@ const Header = () => {
         if(location.pathname.startsWith('/code')) {
           return {service:'/code/servicios', contact:'/code/contacto', alterPage: '/ambiental', nameAltPage: 'Ambiental'};
         } else if(location.pathname.startsWith('/ambiental')) {
-          return {service:'/ambiental/servicios', contact:'/ambiental/contacto', alterPage: '/code', nameAltPage: 'Programador'};
+          return {service:'/ambiental/servicios', contact:'/ambiental/contacto', alterPage: '/code', nameAltPage: <p class="fuente_code">@Desarrollador</p>};
         }
       };
 
@@ -49,7 +49,7 @@ const Header = () => {
 
     const portfolio = () => {
       if(location.pathname.startsWith('/code')) {
-        return <Link to='https://github.com/DRomeroLucas' className='text-navbar m-2 text-decoration-none'>Mi Portafolio</Link>;
+        return <Link to='https://github.com/DRomeroLucas' className='text-navbar m-2 text-decoration-none' target="_blank">Mi Portafolio</Link>;
       } else if(location.pathname.startsWith('/ambiental')) {
         return null;
       }      
@@ -74,7 +74,7 @@ const Header = () => {
 
 
     return(
-      <div  className={`${headerCssStyle()} sticky`}> 
+      <div  className={headerCssStyle()}> 
           <div className='d-flex p-2 align-items-center justify-content-between'>
             <Link to={home} className={logoStyle}>{logo}</Link>
             

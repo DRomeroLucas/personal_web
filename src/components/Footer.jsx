@@ -13,8 +13,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className= {`${footerCssStyle()} mt-auto d-flex justify-content-center align-self-center`}>
-      <p className=' p-4'>Copyright © 2025 David Romero</p>
+    <footer className= {footerCssStyle()}>
+      <div className='footer-text'>
+        <p>Copyright © 2025 David Romero</p>
+      </div>
     </footer>
   )
 }
