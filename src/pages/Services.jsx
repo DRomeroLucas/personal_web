@@ -25,6 +25,7 @@ const Services = () => {
             content = (
                 <>
                     <li>Asesorías sobre procesos ambientales y de consultoría.</li>
+                    <li>Calculo de huella de carbono.</li>
                     <li>Elaboración y revisión de informes para la autoridad (ICA's).</li>
                     {/* <li>Diseño y gestión de bases de datos.</li> */}
                     <li>Elaboración de GDB's y trabajos de geomática.</li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../layout/Layout';
 
-const Environmental = () => {
+const Environmental = () => {        
   return (
     <Layout>
         <div className='hero-img' alt="Fondo, un río con piedras con sombreado decorativo">

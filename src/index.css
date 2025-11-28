@@ -31,12 +31,14 @@
     --description-card-env: #2A7B9B30;
 
     /* Dark mode */
-    --background-dark: #12121A;
+    --background-dark: #202b27;
     --logo1-dark: #C3DBDE;
     --navbar-dark: #E9F2F5;
     --text-dark: #F2E8FF;
-    --description-dark: #6FB1BD85;
+    --express-dark: #b3b2b2;
+    --description-dark: #8F8F8F45;
     --hamburguer-nav-dark: #1C535C;
+    --headerenv-dark: #184117;
 }
 
 body {
@@ -515,12 +517,8 @@ body.dark .navigation-list-normal{
 }
 
 /* Environmental */
-body.dark .header-env{
-    background-color: #10380F;
-}
-
 body.dark .header-env, body.dark .footer-env{
-    background-color: #10380F;
+    background-color: var(--headerenv-dark);
 }
 
 body.dark .logo2 {
@@ -533,4 +531,8 @@ body.dark .description-card {
 
 body.dark .description-card, body.dark .service-list {
     border-color: var(--text-dark);
+}
+
+body.dark .express {
+    color: var(--express-dark);
 }
